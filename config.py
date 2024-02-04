@@ -35,7 +35,7 @@ class Config(object):
     DB_URL  = os.environ.get("DB_URL","mongodb+srv://Yogesh:Yogesh313$@cluster0.lptftko.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
-    BOT_UPTIME  = time.time()
+    BOT_UPTIME  = time.time(1)
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/Yogesh-02-04-2")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5324568283').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002044312409") 
